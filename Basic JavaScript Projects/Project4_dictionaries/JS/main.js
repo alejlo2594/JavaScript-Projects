@@ -9,3 +9,4 @@ function my_Dictionary() {
     delete Animal.Breed;
     document.getElementById("Dictionary").innerHTML = Animal.Breed;
 }
+console.log(2 + 2);
