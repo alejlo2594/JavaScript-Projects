@@ -57,7 +57,7 @@ function Handle_Operator(Next_Operator) {
         //If operator exists, property lookup is performed for the operator
         //in the Perform_Calculation object and the function that matches the 
         //operator is executed.
-        let result = Peform_Calculation[operator](Value_Now, Value_of_Input);
+        let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         //Here we add a fixed amount of numbers after a decimal.
         result = Number(result).toFixed (9);
         //This will remove any trailing 0's
@@ -103,7 +103,7 @@ keys.addEventListener('click', (Event) => {
     if(target.classList.contains('operator')) {
         Handle_Operator(target.value);
         Update_Display();
-        return 
+        return; 
     }
     if(target.classList.contains('decimal')) {
         Input_Decimal(target.value);
