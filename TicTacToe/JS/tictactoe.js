@@ -14,11 +14,11 @@ function placeXOrO(squareNumber) {
         //This condition checks who's turn it is.
         if(activePlayer === "X") {
             //if activePlayer is equal to 'X', the x.png is placed in HTML
-            select.style.backgroundImage="url('/TicTacToe/images/pinkX.jpg')";
+            select.style.backgroundImage= 'url("images/pinkx.jpg")';
             //Active player may only be 'X' or 'O'so, if not 'X' it must be 'O'
         }else {
             //If activePlayer is equal to 'O', the o.png is placed in the HTML
-            select.style.backgroundImage="url('/TicTacToe/images/pinkO.jpg')";
+            select.style.backgroundImage= 'url("images/pinko.jpg")';
         }
         //squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
@@ -34,7 +34,7 @@ function placeXOrO(squareNumber) {
             activePlayer = "X";
         }
         //This function playes the placement sound.
-        audio("/TicTacToe/media/place.mp3");
+        audio("media/place.mp3");
         //This condition checks to see if it is the computers turn.
         if(activePlayer === "O") {
             //This function disables clicking for computers turn.
@@ -105,7 +105,7 @@ function checkWinConditions() {
     //9 squares are selected the code executes.
     else if(selectedSquares.length >= 9) {
         //This function plays the tie game sound.
-        audio("/TicTacToe/media/tie.mp3");
+        audio("media/tie.mp3");
         //This function sets a .3 second timer before the resetGame is called.
         setTimeout(function () { resetGame(); }, 500);
     }
@@ -155,7 +155,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         //This variable stores temporary x axis data we update in our animation loop.
         x = x1,
         //This variable stores temporary y axis data in our animation loop.
-        y = y1,
+        y = y1;
 
     //This function interacts with the canvas.
     function animateLineDrawing() {
@@ -205,11 +205,11 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This line disallows clicking while the win sounds is playing.
     disableClick();
     //this line plays the win sounds.
-    audio("/TicTacToe/media/winGame.mp3");
+    audio("media/winGame.mp3");
     //This line calls our main animation loop.
     animateLineDrawing();
     //This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
-    setTimeout(function() { clear(); resetGame(); } 1000);
+    setTimeout(function() { clear(); resetGame(); } , 1000);
 }
 
 //This function resets the game in the event of a tie or a win.
