@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <h1><center> Aly's TIC TAC TOE Game</center></h1>
-        <title>Tic Tac Toe</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./JS/tictactoe.js"></script>
+        <title>Calculator</title>
+        <meta name="description" content="A basic HTML, CSS, and JavaScript Calculator">
+        <meta name="author" content="Alejandra Lopez">
+        <!-- Link CSS File -->
         <link rel="stylesheet" type="text/css" href="./CSS/game.css">
+        <!-- Link JavaScript File -->
+        <script src="" defer></script>
     </head>
+
     <body>
-        <!-- This container is needed to overlay our canvas over our table. -->
+        <!-- This is the main div container that will display the calculator. -->
         <div class="calculator">
-            <!-- NOTE: Canvas width and height must be within the element. -->
-            <canvas id="win-lines" width="608" height="608"></canvas>
-            <table>
-                <tr>
-                    <td id='0' onclick='placeXOrO("0")'></td>
-                    <td id='1' onclick='placeXOrO("1")'></td>
-                    <td id='2' onclick='placeXOrO("2")'></td>
-                </tr>
-                <tr>
-                    <td id='3' onclick='placeXOrO("3")'></td>
-                    <td id='4' onclick='placeXOrO("4")'"></td>
-                    <td id='5' onclick='placeXOrO("5")'"></td>
-                </tr>
-                <tr>
-                    <td id='6' onclick='placeXOrO("6")'></td>
-                    <td id='7' onclick='placeXOrO("7")'></td>
-                    <td id='8' onclick='placeXOrO("8")'></td>
-                </tr>
-            </table>
+            <!-- This input displays the result of the calculation -->
+            <input type="text" class="calculator-screen" value="0" disabled>
+            <!-- This section displays all the buttons that a user can press to make a calculation-->
+            <div class="calculator-keys">
+                <button type="button" class="operator" value="+">+</button>
+                <button type="button" class="operator" value="-">-</button>
+                <button type="button" class="operator" value="*">&times;</button>
+                <button type="button" class="operator" value="/">&divide;</button>
+
+                <button type="button" value="7">7</button>
+                <button type="button" value="8">8</button>
+                <button type="button" value="9">9</button>
+
+                <button type="button" value="4">4</button>
+                <button type="button" value="5">5</button>
+                <button type="button" value="6">6</button>
+
+                <button type="button" value="1">1</button>
+                <button type="button" value="2">2</button>
+                <button type="button" value="3">3</button>
+
+                <button type="button" value="0">0</button>
+                <button type="button" class="decimal function" value=".">.</button>
+                <button type="button" class="all-clear function" value="all-clear">AC</button>
+
+                <button type="button" class="equal-sign operator" value="=">=</button>
+
+            </div>    
         </div>
     </body>
 </html>
