@@ -60,6 +60,11 @@ h1 {
 
 h3 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Franklin Gothic Book"; /* Sets the font family of all h1 headings */
+    font-family: "Franklin Gothic Book"; /* Sets the font family of all h3 headings */
+    color: #FFF5EE; 
+}
+
+div {
+    font-family: "Franklin Gothic Book"; /* Sets the font family of all <div> elements*/
     color: #FFF5EE; 
 }
