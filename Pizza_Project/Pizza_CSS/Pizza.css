@@ -46,3 +46,20 @@
     width: 100px;
     height: 40px;
 }
+
+body {
+    margin: 0%;  /* This ensures our site displays all the way to the edge of the browser screen */
+    background-color: rgb(60,179,113);
+}
+
+h1 {
+    text-transform: uppercase; /* Capitalizing all h1 headings */
+    font-family: "Franklin Gothic Book"; /* Sets the font family of all h1 headings */
+    color: #FFF5EE; 
+}
+
+h3 {
+    text-transform: uppercase; /* Capitalizing all h1 headings */
+    font-family: "Franklin Gothic Book"; /* Sets the font family of all h1 headings */
+    color: #FFF5EE; 
+}
